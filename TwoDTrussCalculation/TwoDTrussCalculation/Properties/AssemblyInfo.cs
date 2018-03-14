@@ -7,11 +7,11 @@ using Rhino.PlugIns;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("2DTruss")]
+[assembly: AssemblyTitle("TwoDTrussCalculation")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("2DTruss")]
+[assembly: AssemblyProduct("TwoDTrussCalculation")]
 [assembly: AssemblyCopyright("Copyright ©  2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -22,7 +22,7 @@ using Rhino.PlugIns;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("0e05f901-af15-4e60-86de-f75931992ac8")] // This will also be the Guid of the Rhino plug-in
+[assembly: Guid("06a549aa-f947-448a-ba41-38f46092db8c")] // This will also be the Guid of the Rhino plug-in
 
 // Version information for an assembly consists of the following four values:
 //
