@@ -63,6 +63,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BoundaryConditions.cs" />
+    <Compile Include="DrawDeformedGeometry.cs" />
     <Compile Include="Point Load.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -87,6 +88,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Image12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image111.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -11,7 +11,7 @@ namespace TwoDTrussCalculation
     {
 
         public BoundaryConditions()
-          : base("BoundaryConditions", "BDC",
+          : base("BDC", "BDC",
               "Set boundary conditions at nodes",
               "Koala", "2D Truss")
         {

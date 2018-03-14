@@ -11,7 +11,7 @@ namespace TwoDTrussCalculation
     public class TwoDTrussCalculationComponent : GH_Component
     {
         public TwoDTrussCalculationComponent()
-          : base("2D Truss Calculation", "2DTrussCalc",
+          : base("2D Truss Calc.", "2DTrussCalc",
               "Description",
               "Koala", "2D Truss")
         {
@@ -33,10 +33,6 @@ namespace TwoDTrussCalculation
             pManager.AddNumberParameter("Reactions", "R", "Reaction Forces", GH_ParamAccess.list);
             pManager.AddNumberParameter("Element stresses", "Strs", "The Stress in each element", GH_ParamAccess.list);
             pManager.AddNumberParameter("Element strains", "Strn", "The Strain in each element", GH_ParamAccess.list);
-            pManager.AddTextParameter("K_red", "K", "K_reduced-matrix print", GH_ParamAccess.item);
-            pManager.AddTextParameter("K_tot", "K", "K-matrix print", GH_ParamAccess.item);
-            //pManager.AddNumberParameter("Reduced no. dofs", "Red. dofs", "The Reduced Number of Dofs, ie. the Global Number of Dofs minus the Clamped BDCs", GH_ParamAccess.item); //unnecessary
-            //pManager.AddPointParameter("Points", "P", "Points in Geometry", GH_ParamAccess.list); //unnecessary
         }
 
         protected override void SolveInstance(IGH_DataAccess DA)

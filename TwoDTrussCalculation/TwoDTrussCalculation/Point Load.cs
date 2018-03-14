@@ -10,7 +10,7 @@ namespace TwoDTrussCalculation
     {
 
         public Point_Load()
-          : base("Point_Load", "PL",
+          : base("PointLoads", "PL",
               "Set one or more pointloads on nodes",
               "Koala", "2D Truss")
         {
