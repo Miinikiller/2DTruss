@@ -180,8 +180,6 @@ namespace TwoDTrussCalculation
                     R.Add(0);
                 }
             }
-
-
             return R;
         }
 
