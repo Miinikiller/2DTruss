@@ -101,10 +101,6 @@ namespace TwoDTrussCalculation
             DA.SetDataList(1, Reactions);
             DA.SetDataList(2, internalStresses);
             DA.SetDataList(3, internalStrains);
-            DA.SetData(4, K_print);
-            DA.SetData(5, K_print1);
-            //DA.SetData(6, dofs_red);    //unnecessary
-            //DA.SetDataList(7, points);  //unnecessary output
         } //End of main program
 
         private void CalculateInternalStrainsAndStresses(List<double> def, List<Point3d> points, double E, List<Line> geometry, out List<double> internalStresses, out List<double> internalStrains)
@@ -118,7 +114,7 @@ namespace TwoDTrussCalculation
                 int index1 = points.IndexOf(line.From);
                 int index2 = points.IndexOf(line.To);
 
-                //fetching deformation of point
+                //fetching deformation of point in x and y direction
                 double u2 = def[index2 * 2];
                 double v2 = def[index2 * 2 + 1];
                 double u1 = def[index1 * 2];
@@ -130,7 +126,7 @@ namespace TwoDTrussCalculation
                 double nx2 = points[index2].X + u2;
                 double nz2 = points[index2].Z + v2;
 
-                //calculating dL = length of deformed line - original length of line
+                //calculating dL = (length of deformed line - original length of line)
                 double dL = Math.Sqrt(Math.Pow((nx2 - nx1), 2) + Math.Pow((nz2 - nz1), 2)) - line.Length;
 
                 //calculating strain and stress
