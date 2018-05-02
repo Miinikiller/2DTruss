@@ -19,8 +19,8 @@ namespace TwoDTrussCalculation
         protected override void RegisterInputParams(GH_Component.GH_InputParamManager pManager)
         {
             pManager.AddPointParameter("Points", "P", "Points to apply load(s)", GH_ParamAccess.list);
-            pManager.AddNumberParameter("Load", "L", "Load originally given i Newtons (N), give one load for all points or list of loads for each point", GH_ParamAccess.list);
-            pManager.AddNumberParameter("angle (xz)", "a", "give angle for load in xz plane", GH_ParamAccess.list, 90);
+            pManager.AddNumberParameter("Load", "L", "Load magnitude [Newtons]. Give either one load to be applied to all inputted points, or different loads for each inputted loads", GH_ParamAccess.list);
+            pManager.AddNumberParameter("angle (xz)", "a", "Angle [degrees] for load in xz plane", GH_ParamAccess.list, 90);
             //pManager[2].Optional = true; //Code can run without a given angle (90 degrees is initial value)
         }
 
