@@ -22,7 +22,7 @@ namespace TwoDTrussCalculation
             pManager.AddLineParameter("Lines", "LNS", "Geometry, in form of Lines)", GH_ParamAccess.list);
             pManager.AddTextParameter("Boundary Conditions", "BDC", "Boundary Conditions in form (x,z):1,1 where 1=free and 0=restrained", GH_ParamAccess.list);
             pManager.AddNumberParameter("Crossection area", "A", "Crossectional area, initial value 10e3 [mm*mm]", GH_ParamAccess.item, 10000);
-            pManager.AddNumberParameter("Material E modulus", "E", "Material Property, initial value 210e3 [MPa]", GH_ParamAccess.item, 210000);
+            pManager.AddNumberParameter("Material E modulus", "E", "Material Property, initial value 210e3 [MPa]", GH_ParamAccess.item, 200000);
             pManager.AddTextParameter("Loads", "L", "Load given as Vector [N]", GH_ParamAccess.list);
         }
 
